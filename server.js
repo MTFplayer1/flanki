@@ -19,7 +19,7 @@ const transporter = nodemailer.createTransport({
     secure: false,
     auth: {
         user: 'zapraszamnaflanki@gmail.com',
-        pass: 'duwq cnih cgew neaa'
+        pass: '**** **** **** ****'
     }
 });
 
