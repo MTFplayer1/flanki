@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapraszamy na flanki</title>
+    <link rel="icon" type="image/png" href="/LOGO.png" sizes="32x32">
+    <link rel="stylesheet" href="Styl.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <label class="switch">
+            <input type="checkbox" id="languageToggle">
+            <span class="slider round">
+                <span class="slider-text left">ENG</span>
+                <span class="slider-text right">PL</span>
+            </span>
+        </label>
+        <ul id="main_menu">
+            <li class="main_menu_item">
+                <a href="Home.html">Czym są flanki?</a>
+            </li>
+            <li class="main_menu_item">
+                <a href="Rules.html">Zasady</a>
+            </li>
+            <li class="main_menu_item">
+                <a href="Form.html">Liga flanek</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="h1"class="changable">
+        <h1 id="text_o_flankach">Planujemy zorganizować ligę flanek</h1>
+        <button id="czcionka">Zmień czcionkę</button>
+    </div>
+    <div id="sub_text"class="changable">
+        <p id="subtext">Jednak aby zacząć organizowanie ligi, chcemy zobaczyć ilu byłoby potęcjalnych chętnych na takie przedsięwzięcie. Konsekwentnie zachodzi też potrzeba zebrania listy chętnych sędziów.</p>
+        <p id="subtext_1">Dalsze kroki podejmowane będą przy przekroczeniu 200 zapisanych uczestników oraz 20 zapisanych sędziów.</p>
+        <p id="kontakt">Wszystkie informacje dotyczące ligi znajdziesz na filmiku poniżej. Jednak w razie czego napisz na adres: zapraszamnaflanki@gmail.com</p>
+    </div>
+    <div id="liga_flanek" class="changable">
+        <div id="uczestnicy" class="zapisy">
+            <p class="zapis" >Zapisz się jako uczestnik</p>
+            <form id="emailForm">
+                <label for="email">Wprowadź swój email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Wyślij kod</button>
+            </form>
+            <form id="codeForm" style="display:none;">
+                <label for="code">Wprowadź kod weryfikacyjny:</label>
+                <input type="text" id="code" name="code" required>
+                <button type="submit">Zweryfikuj</button>
+            </form>
+            <p class="licznik">Liczba zweryfikowanych e-maili: <span id="verifiedCount">0</span></p>
+            <div id="progressContainer">
+                <div id="progressBar"></div>
+            </div>
+        </div>
+        <div id="sędziowie" class="zapisy">
+            <p class="zapis">Zapisz się jako sędzia</p>
+            <form id="emailForm_2">
+                <label for="email">Wprowadź swój email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Wyślij kod</button>
+            </form>
+            <form id="codeForm_2" style="display:none;">
+                <label for="code">Wprowadź kod weryfikacyjny:</label>
+                <input type="text" id="code" name="code" required>
+                <button type="submit">Zweryfikuj</button>
+            </form>
+            <p class="licznik">Liczba zweryfikowanych e-maili: <span id="verifiedCount_2">0</span></p>
+            <div id="progressContainer_2">
+                <div id="progressBar_2"></div>
+            </div>
+        </div>
+    </div>
+    <iframe id="video_heli_2" width="560" height="315" src="https://www.youtube.com/embed/yA3RAvrKo3E?si=JAfipY2yHh-nF068" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <script src="script.js"></script>
+</body>
+</html>

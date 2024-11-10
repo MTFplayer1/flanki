@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 20px;
+    font-size: larger;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #c3bcac;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+ul a:link, ul a:visited {
+    font-family: "MedievalSharp", cursive !important;
+    font-size: large;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    display: inline-block; 
+    white-space: nowrap;
+    padding: 10px 15px;
+    color: #000000;
+}
+
+.main_menu_item a:hover{
+    text-decoration: underline;
+}
+
+.main_menu_item a.active{
+    text-decoration: underline;
+}
+#progressContainer {
+    margin: 0 auto;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #000;
+    background-color: #e0e0e0;
+}
+
+#progressBar {
+    height: 100%;
+    width: 0;
+    background-color: green;
+    transition: width 0.5s ease;
+}
+#progressContainer_2 {
+    margin: 0 auto;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #000;
+    background-color: #e0e0e0;
+}
+
+#progressBar_2 {
+    height: 100%;
+    width: 0;
+    background-color: green;
+    transition: width 0.5s ease;
+}
+.switch {
+    position: absolute;
+    right:20px;
+    width: 80px;
+    height: 34px;
+    margin-right: 20px; 
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(255, 255, 255); 
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(0, 0, 0);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #ffffff;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(47px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.slider .slider-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.slider .slider-text.left {
+    left: 8px;
+    opacity: 0; 
+}
+
+.slider .slider-text.right {
+    right: 8px;
+}
+
+input:checked + .slider .slider-text.left {
+    opacity: 1;
+}
+
+input:checked + .slider .slider-text.right {
+    opacity: 0;
+}
+#intro{
+    display: flex;
+    justify-content: space-between;
+}
+.opis{
+    font-family: "MedievalSharp", cursive !important;
+    max-width: 40%;
+    font-size: larger;
+    margin-left: 50px;
+    font-weight: 700;
+    line-height: 30px;
+}
+#filmik{
+    margin-right: 50px;
+    padding: 20px;
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+#font_changer_2{
+    margin-left: 250px;
+    border: 0;
+    background-color: transparent;
+    font-size: larger;
+}
+#font_changer_2:hover{
+    text-decoration: underline;
+}
+#pokazowy{
+    margin-right: 250px;
+}
+.czytelne{
+    font-family: Arial, sans-serif !important;
+}
+.nieczytelne{
+    font-family: "MedievalSharp", cursive !important;
+}
+#liga_flanek{
+    font-family: "MedievalSharp", cursive;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1;
+    width: 500;
+    padding: 30px;
+}
+#text_o_flankach{
+    font-family: "MedievalSharp", cursive;
+}
+.zapisy{
+    margin: 0 auto;
+}
+.zapis{
+    font-weight: 900;
+    text-align: center;
+    font-size: larger !important;
+}
+.licznik{
+    text-align: center;
+}
+#sub_text{
+    margin: 0 auto;
+    text-align: center;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 700;
+    width: 80%;
+}
+#h1{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#czcionka{
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    left: 15%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+#czcionka:hover{
+    text-decoration: underline;
+}
+#video_heli_2{
+    padding-top: 100px;
+    display: flex;
+    margin: 0 auto;
+}

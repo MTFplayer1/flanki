@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapraszamy na flanki</title>
+    <link rel="icon" type="image/png" href="/LOGO.png" sizes="32x32">
+    <link rel="stylesheet" href="Styl_zasady.css">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <label class="switch">
+            <input type="checkbox" id="languageToggle">
+            <span class="slider round">
+                <span class="slider-text left">ENG</span>
+                <span class="slider-text right">PL</span>
+            </span>
+        </label>
+        <ul id="main_menu">
+            <li class="main_menu_item">
+                <a href="Home.html">Czym są flanki?</a>
+            </li>
+            <li class="main_menu_item">
+                <a href="Rules.html">Zasady</a>
+            </li>
+            <li class="main_menu_item">
+                <a href="Form.html">Liga flanek</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="Zasady">
+        <div popover id="zasada1">
+            <button class="font_changer">Zmień czcionkę</button>
+            <button id="hideit" popovertarget="zasada1" popovertargetaction="hide">Wróć</button>
+            <h1 id="nagl1">Wybór miejsca i wymiary</h1>
+            <p id="first_text">1. 12 stóp od puszki</p>
+            <p id="first_text">2. Podłoże musi być równe</p>
+            <p id="first_text">3. Wszyscy zawodnicy muszą stać w jednej linii, z puszkami ustawionymi przed sobą</p>
+        </div>
+        <div popover id="zasada2">
+            <button class="font_changer">Zmień czcionkę</button>
+            <button id="hideit" popovertarget="zasada2" popovertargetaction="hide">Wróć</button>
+            <h1 id="nagl1">Napoje i opakowania</h1>
+            <p id="first_text">1. 12 stóp od puszki</p>
+            <p id="first_text">2. Podłoże musi być równe</p>
+            <p id="first_text">3. Wszyscy zawodnicy muszą stać w jednej linii, z puszkami ustawionymi przed sobą</p>
+        </div>
+        <div popover id="zasada3">
+            <button class="font_changer">Zmień czcionkę</button>
+            <button id="hideit" popovertarget="zasada3" popovertargetaction="hide">Wróć</button>
+            <h1 id="nagl1">Punkty karne</h1>
+            <p id="first_text">1. 12 stóp od puszki</p>
+            <p id="first_text">2. Podłoże musi być równe</p>
+            <p id="first_text">3. Wszyscy zawodnicy muszą stać w jednej linii, z puszkami ustawionymi przed sobą</p>
+        </div>
+        <div popover id="zasada4">
+            <button class="font_changer">Zmień czcionkę</button>
+            <button id="hideit" popovertarget="zasada4" popovertargetaction="hide">Wróć</button>
+            <h1 id="nagl1">Pozostałe</h1>
+            <p id="first_text">1. 12 stóp od puszki</p>
+            <p id="first_text">2. Podłoże musi być równe</p>
+            <p id="first_text">3. Wszyscy zawodnicy muszą stać w jednej linii, z puszkami ustawionymi przed sobą</p>
+        </div>
+    </div>
+    <div id="kolumny_i_przyciski">
+        <img id="kolumna1" src="Kolumna.png" alt="Kolumna lewa" class="column">
+        <div id="buttons">
+            <div class="show_button">
+                <button class="showit" popovertarget="zasada1" popovertargetaction="show">Wybór miejsca i wymiary</button>
+            </div>
+            <div class="show_button">
+                <button class="showit" popovertarget="zasada2" popovertargetaction="show">Napoje i opakowania</button>
+            </div>
+            <div class="show_button">
+                <button class="showit" popovertarget="zasada3" popovertargetaction="show">Punkty karne</button>
+            </div>
+            <div class="show_button">
+                <button class="showit" popovertarget="zasada4" popovertargetaction="show">Pozostałe</button>
+            </div>
+        </div>
+        <img id="kolumna2" src="Kolumna.png" alt="Kolumna prawa" class="column">
+    </div>    
+    <script>
+        document.getElementById('languageToggle').addEventListener('change', function() {
+        if (this.checked) {
+            window.location.href = 'EnRules.html';
+        } else {
+            window.location.href = 'Rules.html';
+        }
+        });
+        document.querySelectorAll('.font_changer').forEach(item => {
+            item.addEventListener('click', function() {
+            document.querySelectorAll('.font_changer').forEach(button => {
+                button.classList.toggle('abnormal');
+            });
+            document.querySelectorAll('#first_text').forEach(Text => {
+                Text.classList.toggle('normal');
+            });
+        });
+        });
+    </script>
+    <!--    punkty karne pozostałe <iframe width="560" height="315" src="https://www.youtube.com/embed/ly36kn0ug4k?si=m2FkUy13gTRQM1Pf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    -->
+</body>
+</html>
