@@ -1,4 +1,4 @@
-// Obsługa pierwszego formularza (już istniejąca, pozostaw bez zmian)
+// Obsługa pierwszego formularza
 document.getElementById('emailForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
