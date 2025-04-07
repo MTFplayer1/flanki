@@ -112,7 +112,7 @@ app.get('/verified-count', (req, res) => {
 
 app.use(express.static(path.join(__dirname)));
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'Home.html'));
+    res.sendFile(path.join(__dirname, 'Home.html'));
 });
 app.listen(3000, () => {
     console.log('Serwer działa na porcie 3000');
