@@ -110,7 +110,7 @@ app.get('/verified-count', (req, res) => {
     });
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname)));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'Home.html'));
 });
